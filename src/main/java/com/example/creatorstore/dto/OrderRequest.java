@@ -1,5 +1,6 @@
 package com.example.creatorstore.dto;
 
+
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -8,13 +9,12 @@ import lombok.*;
 
 import java.util.List;
 
-
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CreateOrderRequest {
+public class OrderRequest {
     @NotBlank(message = "Customer name is required")
     private String customerName;
 
